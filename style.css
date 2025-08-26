@@ -64,7 +64,7 @@ ul {
 }
 
 .container {
-  max-width: 1173px;
+  max-width: 1143px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -86,12 +86,37 @@ ul {
   transition: opacity 0.5s;
 }
 
+.btn--small {
+  width: 141px;
+  height: 39px;
+
+  font-size: 12px;
+}
+
 .btn:hover {
   opacity: 0.7;
 }
 
 .btn:active {
   opacity: 1;
+}
+
+.price {
+  color: rgba(246, 118, 44, 1);
+  font-size: 20px;
+  font-weight: 500;
+
+  letter-spacing: 0.1em;
+}
+.price--old {
+  color: rgba(246, 118, 44, 1);
+  font-size: 16px;
+  text-decoration-line: line-through;
+  opacity: 0.5;
+}
+
+.price + .price {
+  margin-left: 3px;
 }
 
 /* ------------------------- HEADER ------------------------- */
@@ -227,4 +252,132 @@ ul {
 
 .food-list__desc {
   padding: 0 16px 10px;
+}
+
+/* ------------------------ ORDER ------------------------ */
+
+.order {
+  background-color: rgba(49, 47, 48, 1);
+  padding: 60px 0;
+}
+
+.order__container {
+  display: flex;
+  align-items: center;
+  gap: 14%;
+}
+.order__img {
+  max-width: 470px;
+}
+.order__col {
+  max-width: 370px;
+}
+.order__title {
+  font-size: 44px;
+
+  margin-bottom: 24px;
+}
+.order__desc {
+  margin-bottom: 13px;
+}
+
+.price {
+  color: rgba(246, 118, 44, 1);
+  font-size: 20px;
+  font-weight: 500;
+
+  letter-spacing: 0.1em;
+}
+.price--old {
+  color: rgba(246, 118, 44, 1);
+  font-size: 16px;
+  text-decoration-line: line-through;
+  opacity: 0.5;
+}
+
+.price + .price {
+  margin-left: 3px;
+}
+
+.order__btn {
+  margin-top: 11px;
+}
+
+/* ------------------------ PRODUCT ------------------------ */
+
+.product {
+  padding: 117px 0 137px;
+}
+
+.product__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.product__card {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  box-sizing: border-box;
+  width: 555px;
+  height: 300px;
+  padding: 0 50px;
+
+  overflow: hidden;
+}
+
+.product__card:nth-child(odd) {
+  padding-left: 290px;
+  padding-right: 20px;
+}
+
+.product__img {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+
+  transition: width 0.5s, height 0.5s, margin-left 0.5s, margin-bottom 0.5s;
+}
+
+.product__card:hover .product__img {
+  width: 110%;
+  height: 110%;
+  margin-left: -5%;
+  margin-bottom: -5%;
+}
+
+.product__title {
+  font-size: 30px;
+
+  margin-bottom: 20px;
+}
+.product__desc {
+  margin-bottom: 11px;
+  width: 255px;
+}
+.product .price {
+  font-size: 16px;
+}
+
+.product__btn {
+  margin-top: 11px;
+}
+
+/* ---------------------- МЕДИА-ЗАПРОСЫ ---------------------- */
+
+@media (max-width: 1172px) {
+  .product__container {
+    justify-content: center;
+  }
+  .food-list__container {
+    justify-content: center;
+  }
 }
