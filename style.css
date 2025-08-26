@@ -25,10 +25,31 @@
   font-weight: 700; */
 
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   background-color: rgba(28, 28, 28, 1);
   color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  opacity: 0.7;
+}
+
+p + p {
+  margin-top: 15px;
 }
 
 a {
@@ -54,6 +75,7 @@ ul {
   justify-content: center;
 
   font-weight: 500;
+  text-transform: uppercase;
 
   width: 165px;
   height: 49px;
@@ -78,9 +100,6 @@ ul {
   padding: 25px 0px;
 }
 
-.container {
-}
-
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -89,14 +108,8 @@ ul {
   text-transform: uppercase;
 }
 
-.logo {
-}
-
 .header__logo {
   margin-right: 60px;
-}
-
-.header__nav {
 }
 
 .header__list {
@@ -125,5 +138,93 @@ ul {
   opacity: 1.5;
 }
 
-.header__btn {
+/* ------------------------- MAIN ------------------------- */
+
+/* ------------------------- WELCOME ------------------------- */
+
+.welcome {
+  box-sizing: border-box;
+
+  min-height: 100vh;
+  margin-top: -99px;
+
+  padding-bottom: 186px;
+  padding-top: 286px;
+
+  background-image: url("img/welcome-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+}
+.welcome__container {
+}
+.welcome__subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 7px;
+}
+.welcome__title {
+  font-size: 58px;
+  width: 555px;
+  margin-bottom: 37px;
+}
+.welcome__desc {
+  font-size: 18px;
+  width: 525px;
+  margin-bottom: 42px;
+}
+
+/* ------------------------ FOOD-LIST ------------------------ */
+
+.food-list {
+  padding-bottom: 102px;
+  padding-top: 115px;
+}
+
+.food-list__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 31px;
+}
+.food-list__card {
+  width: 262px;
+  min-height: 323px;
+
+  text-align: center;
+
+  border-radius: 10px;
+  background: rgba(49, 47, 48, 1);
+
+  overflow: hidden;
+}
+.food-list__img {
+  width: 100%;
+  height: 175px;
+
+  object-fit: cover;
+
+  margin-bottom: 28px;
+
+  transition: width 0.5s, height 0.5s, margin-left 0.5s, margin-bottom 0.5s;
+}
+
+.food-list__card:hover .food-list__img {
+  width: 110%;
+  height: 185px;
+  margin-left: -5%;
+  margin-bottom: 18px;
+}
+
+.food-list__title {
+  font-size: 20px;
+
+  margin-bottom: 13px;
+}
+
+.food-list__desc {
+  padding: 0 16px 10px;
 }
