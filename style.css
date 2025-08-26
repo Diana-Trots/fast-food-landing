@@ -592,8 +592,7 @@ button::-moz-focus-inner {
   width: 12px;
   height: 12px;
 }
-.footer__nav {
-}
+
 .footer__nav-list {
   display: flex;
   gap: 158px;
