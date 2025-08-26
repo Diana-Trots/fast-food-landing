@@ -64,7 +64,8 @@ ul {
 }
 
 .container {
-  max-width: 1143px;
+  box-sizing: border-box;
+  max-width: 1173px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -306,7 +307,7 @@ ul {
 /* ------------------------ PRODUCT ------------------------ */
 
 .product {
-  padding: 117px 0 137px;
+  padding: 117px 0 20px;
 }
 
 .product__container {
@@ -344,14 +345,14 @@ ul {
   height: 100%;
   z-index: -5;
 
-  transition: width 0.5s, height 0.5s, margin-left 0.5s, margin-bottom 0.5s;
+  transition: width 0.5s, height 0.5s, transform 0.5s;
 }
 
 .product__card:hover .product__img {
   width: 110%;
   height: 110%;
-  margin-left: -5%;
-  margin-bottom: -5%;
+
+  transform: translate(-5%, 5%);
 }
 
 .product__title {
@@ -369,6 +370,182 @@ ul {
 
 .product__btn {
   margin-top: 11px;
+}
+
+/* ---------------------- FEEDBACK ---------------------- */
+
+.feedback {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.container {
+}
+
+.feedback__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px 118px;
+}
+
+.feedback_img {
+  margin-bottom: 50px;
+}
+
+.feedback__text {
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 370px;
+}
+
+.feedback__text::before {
+  content: url("img/icons/quote.svg");
+  width: 46px;
+  height: 46px;
+
+  margin-bottom: 37px;
+  align-self: center;
+}
+
+.feedback__desc {
+  opacity: 0.7;
+
+  margin-bottom: 27px;
+}
+
+.feedback__author {
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.feedback__subauthor {
+  opacity: 0.7;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* ---------------------- DOWNLOAD ---------------------- */
+
+.download {
+  background-color: rgba(49, 47, 48, 1);
+  padding: 60px 0;
+}
+
+.download__container {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 93px;
+}
+
+.download__cta {
+  opacity: 1;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+
+.footer {
+  padding: 126px 0 140px;
+}
+.footer a {
+  opacity: 0.8;
+  font-size: 12px !important;
+
+  transition: opacity 0.5s;
+}
+
+.footer a:hover {
+  opacity: 0.5;
+}
+
+.footer a:active {
+  opacity: 1;
+}
+.container {
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contacts a {
+  padding-left: 22px;
+  position: relative;
+}
+
+.footer__logo {
+  width: 70px;
+  height: 70px;
+
+  margin-bottom: 20px;
+}
+
+.footer__link + .footer__link {
+  margin-top: 9px;
+}
+
+.footer__link-mail::before {
+  content: url("img/icons/mail.svg");
+  bottom: 3px;
+  left: 0;
+
+  position: absolute;
+  width: 12px;
+  height: 12px;
+}
+
+.footer__link-web::before {
+  content: url("img/icons/global.svg");
+  bottom: 3px;
+  left: 0;
+
+  position: absolute;
+  width: 12px;
+  height: 12px;
+}
+.footer__nav {
+}
+.footer__nav-list {
+  display: flex;
+  gap: 158px;
+}
+
+.footer__nav-list-title {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 1;
+}
+.footer__inner-list a {
+  display: block;
+  margin-top: 15px;
+}
+.footer__inner-list-socials {
+  display: flex;
+  gap: 10px;
+}
+.footer__social-img {
+  width: 15px;
+  height: 15px;
+  opacity: 1 !important;
+  transition: width 0.3s, height 0.3s, transform 0.3s;
+}
+.footer__social-img:hover {
+  width: 21px;
+  height: 21px;
+  transform: translate(-3px, -3px);
 }
 
 /* ---------------------- МЕДИА-ЗАПРОСЫ ---------------------- */
