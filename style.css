@@ -767,17 +767,16 @@ button::-moz-focus-inner {
 }
 
 @media (max-width: 800px) {
+  .welcome {
+    min-height: unset;
+  }
+
   .header__container {
     padding: 0 35px;
   }
 
   .header__btn {
     display: none;
-  }
-
-  .welcome {
-    padding-bottom: 140px;
-    padding-top: 190px;
   }
 
   .welcome__desc {
@@ -836,11 +835,6 @@ button::-moz-focus-inner {
 }
 
 @media (max-width: 700px) {
-  .welcome {
-    padding-top: 170px;
-    padding-bottom: 110px;
-  }
-
   .download__container {
     flex-direction: column;
     align-items: center;
@@ -885,11 +879,6 @@ button::-moz-focus-inner {
 }
 
 @media (max-width: 570px) {
-  .welcome {
-    padding-top: 155px;
-    padding-bottom: 90px;
-  }
-
   .welcome__title {
     font-size: 35px;
     margin-bottom: 10px;
@@ -968,11 +957,6 @@ button::-moz-focus-inner {
     height: 32px;
   }
 
-  .welcome {
-    padding-bottom: 90px;
-    padding-top: 140px;
-  }
-
   .welcome__container {
     padding: 0 25px;
   }
@@ -1027,11 +1011,6 @@ button::-moz-focus-inner {
 }
 
 @media (max-width: 435px) {
-  .welcome {
-    padding-bottom: 70px;
-    padding-top: 25svh;
-  }
-
   .welcome__title {
     font-size: 25px;
   }
